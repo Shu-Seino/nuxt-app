@@ -1,0 +1,19 @@
+.header{
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.header h1{
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    margin-left: 20px;
+}

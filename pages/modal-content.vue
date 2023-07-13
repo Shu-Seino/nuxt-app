@@ -1,44 +1,44 @@
 <template>
     <div>
-      <!-- モーダルウィンドウのトリガーボタン -->
-      <button @click="showModal">モーダルを開く</button>
-  
-      <!-- モーダルウィンドウのコンテンツ -->
-      <div v-if="isOpen" class="modal">
-        <div class="modal-content">
-          <!-- モーダルウィンドウの内容 -->
-          <h2>モーダルウィンドウ</h2>
-          <p>モーダルウィンドウの内容をここに記述します。</p>
-  
-          <!-- モーダルウィンドウを閉じるボタン -->
-          <button @click="hideModal">閉じる</button>
+        <!-- モーダルウィンドウのトリガーボタン -->
+        <button @click="showModal">モーダルを開く</button>
+
+        <!-- モーダルウィンドウのコンテンツ -->
+        <div v-if="isOpen" class="modal">
+            <div class="modal-content">
+                <!-- モーダルウィンドウの内容 -->
+                <h2>モーダルウィンドウ</h2>
+                <p>モーダルウィンドウの内容をここに記述します。</p>
+
+                <!-- モーダルウィンドウを閉じるボタン -->
+                <button @click="hideModal">閉じる</button>
+            </div>
         </div>
-      </div>
     </div>
-  </template>
+</template>
   
-  <script lang="ts">
-  import { defineComponent, ref } from 'vue';
-  
-  export default defineComponent({
+<script lang="ts">
+import { defineComponent, ref } from 'vue';
+
+export default defineComponent({
     data() {
-      return {
-        isOpen: ref(false), // モーダルウィンドウの表示状態を管理するリアクティブなフラグ
-      };
+        return {
+            isOpen: ref(false), // モーダルウィンドウの表示状態を管理するリアクティブなフラグ
+        };
     },
     methods: {
-      showModal() {
-        this.isOpen = true; // モーダルウィンドウを表示する
-      },
-      hideModal() {
-        this.isOpen = false; // モーダルウィンドウを非表示にする
-      },
+        showModal() {
+            this.isOpen = true; // モーダルウィンドウを表示する
+        },
+        hideModal() {
+            this.isOpen = false; // モーダルウィンドウを非表示にする
+        },
     },
-  });
-  </script>
+});
+</script>
   
-  <style>
-  .modal {
+<style>
+.modal {
     /* モーダルウィンドウのスタイルを定義 */
     position: fixed;
     top: 0;
@@ -49,13 +49,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     /* モーダルウィンドウのコンテンツスタイルを定義 */
     background-color: #fff;
     padding: 20px;
     border-radius: 4px;
-  }
-  </style>
+}
+</style>
   

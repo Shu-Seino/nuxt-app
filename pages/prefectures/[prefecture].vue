@@ -1,3 +1,7 @@
 <template>
-    <h1>This is /prefectures/pref Page</h1>
+    <div>
+        <TheHeader />
+        <h2>This is prefectures Page</h2>
+        <TheFooter />
+    </div>
 </template>

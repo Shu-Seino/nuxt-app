@@ -5,9 +5,5 @@
 </template>
 
 <style>
-.header{
-    background-color:blue;
-    color: aliceblue;
-    display:flex;
-}
+@import url("~/assets/css/header.css");
 </style>

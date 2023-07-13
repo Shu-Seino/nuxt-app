@@ -1,0 +1,62 @@
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background: black;
+    transition: all 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.rotate-back {
+    transform: rotate(-45deg);
+}
+
+.move-up {
+    position: relative;
+    top: -9px;
+}
+
+.move-down {
+    position: relative;
+    top: 9px;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
